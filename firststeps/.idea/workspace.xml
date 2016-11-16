@@ -47,8 +47,8 @@
       <file leaf-file-name="MyFirstTestBrowserStart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="493">
+              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -559,6 +559,15 @@
     <history-entry file="MyFirstTestBrowserStart_myFirstTest - 2016.11.16 at 19h 02m 12s.xml">
       <configuration name="MyFirstTestBrowserStart.myFirstTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="MyFirstTestBrowserStart_myFirstTest - 2016.11.16 at 19h 36m 53s.xml">
+      <configuration name="MyFirstTestBrowserStart.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTestBrowserStart_myFirstTest - 2016.11.16 at 19h 37m 47s.xml">
+      <configuration name="MyFirstTestBrowserStart.myFirstTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTestBrowserStart_myFirstTest - 2016.11.16 at 19h 38m 45s.xml">
+      <configuration name="MyFirstTestBrowserStart.myFirstTest" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="TestStartBrowser_testStartBrowser - 2016.11.16 at 18h 11m 51s.xml">
       <configuration name="TestStartBrowser.testStartBrowser" configurationId="TestNG" />
     </history-entry>
@@ -657,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="493">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

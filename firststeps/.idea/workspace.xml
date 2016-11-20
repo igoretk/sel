@@ -23,25 +23,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="326">
               <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestLogin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestLogin.java">
+      <file leaf-file-name="TestLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+            <state relative-caret-position="204">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,10 +50,24 @@
       <file leaf-file-name="MyFirstTestBrowserStart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="136">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +110,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestStartBrowser.java" />
         <option value="$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestLogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java" />
       </list>
     </option>
   </component>
@@ -114,7 +130,14 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -147,9 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,8 +214,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firststeps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firststeps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hometasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +263,7 @@
     <configuration default="false" name="TestStartBrowser.testStartBrowser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.*" />
+          <option name="PATTERN" value="ru.testing.hometasks.starts.browser.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,7 +296,7 @@
     <configuration default="false" name="MyFirstTestBrowserStart.myFirstTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.*" />
+          <option name="PATTERN" value="ru.testing.hometasks.starts.browser.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -276,7 +329,7 @@
     <configuration default="false" name="TestLogin.testLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.*" />
+          <option name="PATTERN" value="ru.testing.hometasks.starts.browser.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,7 +338,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="ru.testing.hometasks" />
-      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.TestLogin" />
+      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.starts.browser.login.TestLogin" />
       <option name="METHOD_NAME" value="testLogin" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -309,7 +362,7 @@
     <configuration default="false" name="TestLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.*" />
+          <option name="PATTERN" value="ru.testing.hometasks.starts.browser.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -318,7 +371,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="ru.testing.hometasks" />
-      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.TestLogin" />
+      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.starts.browser.login.TestLogin" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -342,7 +395,7 @@
     <configuration default="false" name="MyFirstTestBrowserStart" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.*" />
+          <option name="PATTERN" value="ru.testing.hometasks.starts.browser.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -640,34 +693,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyFirstTestBrowserStart - 2016.11.19 at 17h 25m 47s.xml">
-      <configuration name="MyFirstTestBrowserStart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestLogin - 2016.11.19 at 17h 27m 36s.xml">
-      <configuration name="TestLogin" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 16h 40m 28s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 16h 38m 16s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 16h 44m 04s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 16h 39m 01s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 16h 49m 49s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 16h 50m 52s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 16h 50m 14s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 16h 51m 19s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 17h 29m 36s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 16h 55m 28s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 17h 42m 42s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 17h 03m 41s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 17h 43m 20s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 17h 05m 01s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestLogin_testLogin - 2016.11.19 at 17h 44m 41s.xml">
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 17h 08m 35s.xml">
+      <configuration name="TestLogin.testLogin" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 17h 09m 45s.xml">
+      <configuration name="TestLogin.testLogin" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestLogin_testLogin - 2016.11.20 at 17h 12m 30s.xml">
       <configuration name="TestLogin.testLogin" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -735,14 +788,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -773,14 +826,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -811,14 +864,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestStartBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -860,14 +951,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebDriver.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/2.53.1/selenium-firefox-driver-2.53.1.jar!/org/openqa/selenium/firefox/FirefoxDriver.class" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestStartBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -876,25 +959,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/starts/browser/login/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/MyFirstTestBrowserStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/TestLogin.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="326">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -3,6 +3,7 @@ package ru.testing.hometasks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +20,9 @@ public class MyFirstTestBrowserStart {
 
   @BeforeMethod
   public void start() {
-    driver = new FirefoxDriver();
+    DesiredCapabilities caps = new DesiredCapabilities();
+    caps.setCapability(FirefoxDriver.MARIONETTE, true);
+    WebDriver driver = new FirefoxDriver(caps);
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     driver.manage().window().maximize();
     wait = new WebDriverWait(driver, 5);

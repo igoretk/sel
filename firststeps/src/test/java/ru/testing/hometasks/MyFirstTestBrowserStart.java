@@ -21,7 +21,6 @@ public class MyFirstTestBrowserStart {
   @BeforeMethod
   public void start() {
     DesiredCapabilities caps = new DesiredCapabilities();
-    caps.setCapability(FirefoxDriver.MARIONETTE, true);
     WebDriver driver = new FirefoxDriver(caps);
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     driver.manage().window().maximize();

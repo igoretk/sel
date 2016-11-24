@@ -29,7 +29,7 @@ public class TestBase {
 
     @BeforeClass
     public void setUp() {
-        browser = BrowserType.IE;
+        browser = BrowserType.CHROME;
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         options.setBinary("c:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
@@ -45,7 +45,7 @@ public class TestBase {
             driver = new InternetExplorerDriver(capabilities);
         }
 
-        System.out.println(((HasCapabilities) driver).getCapabilities());
+        //System.out.println(((HasCapabilities) driver).getCapabilities());
 
         wait = new WebDriverWait(driver, 5);
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);

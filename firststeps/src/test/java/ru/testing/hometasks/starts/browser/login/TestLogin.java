@@ -46,14 +46,18 @@ public class TestLogin extends TestBase {
   @Test
   public void testStickers() {
     driver.navigate().to("http://localhost/litecart/public_html");
-    List<WebElement> product = driver.findElements(By.xpath(".//*[@id='box-most-popular']/div/ul/li"));
-    System.out.println(product.size());
-    for (int i = 1; i < product.size(); i++) {
-     // System.out.println(product.get(i).getText());
-      
-      assertTrue(isElementPresent(driver, By.cssSelector("class~=sticker")));
+    List<WebElement> product = driver.findElements(By.xpath(".//*[@class='content']"));
 
+    System.out.println(product.size());
+    int counts = 0;
+
+    for (int i = 1; i < product.size() + 1; i++) {
+
+      assertTrue(isElementPresent(driver, By.cssSelector("[class~=sticker]")));
+      counts = i;
     }
+    assertEquals(counts, product.size());
+
   }
 }
 

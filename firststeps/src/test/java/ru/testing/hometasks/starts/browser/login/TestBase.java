@@ -31,7 +31,7 @@ public class TestBase {
 
   @BeforeClass
   public void setUp() {
-    browser = BrowserType.CHROME;
+    browser = BrowserType.FIREFOX;
     ChromeOptions options = new ChromeOptions();
     options.addArguments("start-maximized");
     DesiredCapabilities capabilities = new DesiredCapabilities();

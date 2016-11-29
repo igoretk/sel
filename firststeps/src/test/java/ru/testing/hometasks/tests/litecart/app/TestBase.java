@@ -1,4 +1,4 @@
-package ru.testing.hometasks.starts.browser.login;
+package ru.testing.hometasks.tests.litecart.app;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -31,7 +31,7 @@ public class TestBase {
 
   @BeforeClass
   public void setUp() {
-    browser = BrowserType.FIREFOX;
+    browser = BrowserType.CHROME;
     ChromeOptions options = new ChromeOptions();
     options.addArguments("start-maximized");
     DesiredCapabilities capabilities = new DesiredCapabilities();

@@ -1,4 +1,4 @@
-package ru.testing.hometasks.starts.browser.login;
+package ru.testing.hometasks.tests.litecart.app;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
@@ -6,14 +6,17 @@ import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class TestLogin extends TestBase {
+public class TestsLitecartApp extends TestBase {
 
-  public TestLogin(String browser) {
+  public TestsLitecartApp(String browser) {
     super(browser);
   }
 
@@ -157,6 +160,63 @@ public class TestLogin extends TestBase {
     assertEquals(stylePriceCampOpenedPage, stylePriceCampMainOpenedExpected);
     assertEquals(colorPriceCampOpenedPage, colorPriceCampMainOpenedExpected);
 
+  }
+
+  @Test
+  public void testTask9Part1Alphabetical() {
+    driver.navigate().to("http://localhost/litecart/public_html/admin/?app=countries&doc=countries");
+    List<WebElement> countryTable = driver.findElements(By.cssSelector(".dataTable tr.row td a:not([title=Edit])"));
+    List<String> CountryList = new ArrayList<>();
+    for (int i = 1; i < countryTable.size(); i++) {
+      CountryList.add(countryTable.get(i).getAttribute("innerText"));
+    }
+    List<String> copyOfCountryList = new ArrayList<>(CountryList);
+    Collections.sort(CountryList, String.CASE_INSENSITIVE_ORDER);
+    assertEquals(CountryList, copyOfCountryList);
+  }
+
+  @Test
+  public void testTask9Part1ZoneNumbers() {
+    driver.navigate().to("http://localhost/litecart/public_html/admin/?app=countries&doc=countries");
+    List<WebElement> countryZones = driver.findElements(By.xpath(".//*[@class='dataTable']//td[5]"));
+    for (int i = 1; i < countryZones.size(); i++) {
+      String str = countryZones.get(i).findElement(By.cssSelector(".dataTable tr.row td:nth-last-child(2)")).getAttribute("innerText");
+      System.out.println(str);
+      if (!str.equals("0")) {
+        countryZones.get(i).click();
+        //WebElement item = driver.findElement(By.xpath(String.format("//ul[@id='box-apps-menu']/li[%s]", i)));
+        //countryZones.get(i).findElement(By.cssSelector(".dataTable tr.row td a:not([title=Edit])"));
+       // driver.findElement(By.cssSelector(String.format(".dataTable tr.row td a:not([title=Edit])%s", i))).click();
+
+        List<WebElement> openedCountryZones = driver.findElements(By.cssSelector(".#table-zones tr td:nth-child(3)"));
+        List<String> zoneList = new ArrayList<>();
+        for (int j = 1; i < openedCountryZones.size(); j++) {
+          zoneList.add(openedCountryZones.get(j).getAttribute("innerText"));
+        }
+        List<String> copyOfZoneList = new ArrayList<>(zoneList);
+        Collections.sort(zoneList, String.CASE_INSENSITIVE_ORDER);
+        assertEquals(zoneList, copyOfZoneList);
+      }
+    }
+    driver.navigate().back();
+
+  }
+
+  @Test
+  public void testListsDraft() {
+    List<String> list1 = new ArrayList<>();
+    list1.add("Mama");
+    list1.add("papa");
+    list1.add("abrvalg");
+    list1.add("Zzzz");
+
+    System.out.println("до сорт " + list1);
+
+    Collections.sort(list1, String.CASE_INSENSITIVE_ORDER);
+    List<String> list2CopyOfList1 = new ArrayList<>(list1);
+    // assertEquals(list1, list2CopyOfList1);
+
+    System.out.println("после сорт " + list1);
 
   }
 

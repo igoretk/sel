@@ -1,4 +1,4 @@
-package ru.testing.hometasks;
+package ru.testing.hometasks.starts.browser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

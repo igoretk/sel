@@ -175,30 +175,32 @@ public class TestsLitecartApp extends TestBase {
     assertEquals(CountryList, copyOfCountryList);
   }
 
+
   @Test
   public void testTask9Part1ZoneNumbers() {
     driver.navigate().to("http://localhost/litecart/public_html/admin/?app=countries&doc=countries");
-    List<WebElement> countryZones = driver.findElements(By.xpath(".//*[@class='dataTable']//td[5]"));
-    for (int i = 1; i < countryZones.size(); i++) {
-      String str = countryZones.get(i).findElement(By.cssSelector(".dataTable tr.row td:nth-last-child(2)")).getAttribute("innerText");
-      System.out.println(str);
+    List<WebElement> countryZones = driver.findElements(By.xpath("//*[@id='content']//tr/td[6]"));
+    for (int i = 2; i < countryZones.size(); i++) {
+      String str = driver.findElement(By.xpath(String.format("//*[@id='content']//tr[%s]/td[6]", i))).getAttribute("innerText");
+      System.out.println(i + " значение атр: " + str);
       if (!str.equals("0")) {
-        countryZones.get(i).click();
-        //WebElement item = driver.findElement(By.xpath(String.format("//ul[@id='box-apps-menu']/li[%s]", i)));
-        //countryZones.get(i).findElement(By.cssSelector(".dataTable tr.row td a:not([title=Edit])"));
-       // driver.findElement(By.cssSelector(String.format(".dataTable tr.row td a:not([title=Edit])%s", i))).click();
-
-        List<WebElement> openedCountryZones = driver.findElements(By.cssSelector(".#table-zones tr td:nth-child(3)"));
+        System.out.println("счетчик " + i);
+        WebElement e = driver.findElement(By.xpath(String.format("//tr[%s]//td[7]/a", i)));
+        System.out.println("вебэлемент ->" + e + " вебэлемент атр: " + e.getAttribute("href"));
+        e.click();
+        List<WebElement> openedCountryZones = driver.findElements(By.cssSelector("#table-zones tr td:nth-child(3)"));
         List<String> zoneList = new ArrayList<>();
-        for (int j = 1; i < openedCountryZones.size(); j++) {
+        for (int j = 1; j < openedCountryZones.size() - 1; j++) {
           zoneList.add(openedCountryZones.get(j).getAttribute("innerText"));
         }
         List<String> copyOfZoneList = new ArrayList<>(zoneList);
-        Collections.sort(zoneList, String.CASE_INSENSITIVE_ORDER);
+         Collections.sort(zoneList, String.CASE_INSENSITIVE_ORDER);
         assertEquals(zoneList, copyOfZoneList);
+        driver.navigate().back();
+
       }
+
     }
-    driver.navigate().back();
 
   }
 

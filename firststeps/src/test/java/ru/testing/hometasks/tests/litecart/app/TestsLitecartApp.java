@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -60,19 +61,6 @@ public class TestsLitecartApp extends TestBase {
       counts = i;
     }
     assertEquals(counts, product.size());
-
-  }
-
-  @Test
-  public void tempDraftForGettingAttributes() {
-    driver.navigate().to("http://localhost/litecart/public_html/en/");
-    //WebElement element = driver.findElement(By.cssSelector("[name = 'login']"));
-    //System.out.println(element.getAttribute("outerHTML"));
-    WebElement element1 = driver.findElement(By.cssSelector("[name = 'query']"));
-    System.out.println(element1.getAttribute("value"));
-    Point location = element1.getLocation();
-    Rectangle rectangle = element1.getRect();
-    System.out.println("location = " + location + " rectangle = " + rectangle);
 
   }
 
@@ -194,7 +182,7 @@ public class TestsLitecartApp extends TestBase {
           zoneList.add(openedCountryZones.get(j).getAttribute("innerText"));
         }
         List<String> copyOfZoneList = new ArrayList<>(zoneList);
-         Collections.sort(zoneList, String.CASE_INSENSITIVE_ORDER);
+        Collections.sort(zoneList, String.CASE_INSENSITIVE_ORDER);
         assertEquals(zoneList, copyOfZoneList);
         driver.navigate().back();
 
@@ -205,23 +193,28 @@ public class TestsLitecartApp extends TestBase {
   }
 
   @Test
-  public void testListsDraft() {
-    List<String> list1 = new ArrayList<>();
-    list1.add("Mama");
-    list1.add("papa");
-    list1.add("abrvalg");
-    list1.add("Zzzz");
+  public void testTask9Part2() {
+    driver.navigate().to("http://localhost/litecart/public_html/admin/?app=geo_zones&doc=geo_zones");
+    List<WebElement> geoZones = driver.findElements(By.xpath(".//*[@id='content']//tr//td[3]"));
+    for (int i = 2; i < geoZones.size(); i++) {
 
-    System.out.println("до сорт " + list1);
+      WebElement countryLinkToClick = driver.findElement(By.xpath(String.format("//tr[%s]/td[3]/a", i)));
+      countryLinkToClick.click();
 
-    Collections.sort(list1, String.CASE_INSENSITIVE_ORDER);
-    List<String> list2CopyOfList1 = new ArrayList<>(list1);
-    // assertEquals(list1, list2CopyOfList1);
+      List<WebElement> openedZones = driver.findElements(By.xpath(".//*[@id='table-zones']//tr//td[3]"));
+      for (int j = 1; j < openedZones.size() - 1; j++) {
 
-    System.out.println("после сорт " + list1);
+        WebElement zoneToSelect = driver.findElement(By.xpath(String.format("//tr[%s]/td[3]/select", j)));
+        Select selectZones = new Select(zoneToSelect);
+        List options = selectZones.getOptions();
+        List copyOfOptions = new ArrayList(options);
+        Collections.sort(options, String.CASE_INSENSITIVE_ORDER);
+        assertEquals(options, copyOfOptions);
+        driver.navigate().back();
 
+      }
+    }
   }
-
 }
 
 

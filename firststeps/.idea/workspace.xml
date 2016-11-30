@@ -35,8 +35,8 @@
       <file leaf-file-name="TestsLitecartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="179" column="39" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="39" />
+            <state relative-caret-position="89">
+              <caret line="195" column="28" selection-start-line="195" selection-start-column="14" selection-end-line="195" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -245,7 +245,7 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers">
+  <component name="RunManager" selected="TestNG.TestsLitecartApp.testTask9Part2">
     <configuration default="false" name="TestsLitecartApp.testTask9Part1Alphabetical" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -260,39 +260,6 @@
       <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
       <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
       <option name="METHOD_NAME" value="testTask9Part1Alphabetical" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestsLitecartApp.testListsDraft" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.tests.litecart.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="firststeps" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
-      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
-      <option name="METHOD_NAME" value="testListsDraft" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -392,6 +359,39 @@
       <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
       <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
       <option name="METHOD_NAME" value="testTask9Part1ZoneNumbers2" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestsLitecartApp.testTask9Part2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.testing.hometasks.tests.litecart.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="firststeps" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
+      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
+      <option name="METHOD_NAME" value="testTask9Part2" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -657,18 +657,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1Alphabetical" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testListsDraft" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testClick" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers2" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testClick" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers2" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers2" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testClick" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1Alphabetical" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testListsDraft" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part2" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers2" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testClick" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1Alphabetical" />
       </list>
     </recent_temporary>
   </component>
@@ -692,24 +692,6 @@
     <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers - 2016.11.30 at 15h 18m 17s.xml">
       <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 14h 49m 59s.xml">
-      <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 14h 50m 31s.xml">
-      <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 14h 53m 30s.xml">
-      <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 14h 54m 24s.xml">
-      <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 15h 01m 33s.xml">
-      <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 15h 01m 53s.xml">
-      <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 15h 14m 26s.xml">
       <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
     </history-entry>
@@ -718,6 +700,24 @@
     </history-entry>
     <history-entry file="TestsLitecartApp_testTask9Part1ZoneNumbers2 - 2016.11.30 at 15h 17m 13s.xml">
       <configuration name="TestsLitecartApp.testTask9Part1ZoneNumbers2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask9Part2 - 2016.11.30 at 16h 24m 40s.xml">
+      <configuration name="TestsLitecartApp.testTask9Part2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask9Part2 - 2016.11.30 at 16h 31m 05s.xml">
+      <configuration name="TestsLitecartApp.testTask9Part2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask9Part2 - 2016.11.30 at 16h 31m 22s.xml">
+      <configuration name="TestsLitecartApp.testTask9Part2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask9Part2 - 2016.11.30 at 16h 45m 16s.xml">
+      <configuration name="TestsLitecartApp.testTask9Part2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask9Part2 - 2016.11.30 at 16h 46m 23s.xml">
+      <configuration name="TestsLitecartApp.testTask9Part2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask9Part2 - 2016.11.30 at 16h 47m 35s.xml">
+      <configuration name="TestsLitecartApp.testTask9Part2" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -728,28 +728,28 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31939977" sideWeight="0.4946695" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35476956" sideWeight="0.5133262" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33315566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33315566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35476956" sideWeight="0.48667377" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5056543" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5056543" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1066,8 +1066,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="179" column="39" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="39" />
+        <state relative-caret-position="89">
+          <caret line="195" column="28" selection-start-line="195" selection-start-column="14" selection-end-line="195" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

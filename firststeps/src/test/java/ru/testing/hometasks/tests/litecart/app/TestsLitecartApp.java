@@ -1,17 +1,13 @@
 package ru.testing.hometasks.tests.litecart.app;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -228,110 +224,14 @@ public class TestsLitecartApp extends TestBase {
 
     @Test
     public void testTask12NewProductAdd() throws InterruptedException {
-        WebElement catalog = driver.findElement(By.xpath(".//*[@id='box-apps-menu']//li[2]/a"));
-        catalog.click();
 
-        WebElement addNewProduct = driver.findElement(By.xpath(".//*[@id='content']//a[2]"));
-        addNewProduct.click();
-
-        WebElement status = driver.findElement(By.xpath("//input[@name='status' and @value='1']"));
-        status.click();
-
-        WebElement name = driver.findElement(By.xpath(".//span[@class='input-wrapper']//*[@type='text']"));
-        name.clear();
-        name.sendKeys("MyProduct");
-
-        WebElement code = driver.findElement(By.xpath(".//input[@name='code']"));
-        code.clear();
-        code.sendKeys("123321");
-
-        WebElement category = driver.findElement(By.xpath(".//input[@data-name='Rubber Ducks']"));
-        category.click();
-
-        WebElement gender = driver.findElement(By.xpath(".//input[@type='checkbox' and @value='1-1']"));
-        gender.click();
-
-        WebElement quantity = driver.findElement(By.xpath(".//input[@name='quantity']"));
-        quantity.clear();
-        quantity.sendKeys("20");
-
-        Select quantityUnit = new Select(driver.findElement(By.xpath(".//select[@name='quantity_unit_id']")));
-        quantityUnit.selectByVisibleText("pcs");
-
-        Select deliveryStatus = new Select(driver.findElement(By.xpath(".//select[@name='delivery_status_id']")));
-        deliveryStatus.selectByVisibleText("3-5 days");
-
-        Select soldOutStatus = new Select(driver.findElement(By.xpath(".//select[@name='sold_out_status_id']")));
-        soldOutStatus.selectByVisibleText("Sold out");
-
-        WebElement upload = driver.findElement(By.xpath(".//input[@type='file']"));
-        upload.sendKeys("e:\\sel\\firststeps\\Desert.jpg");
-
-        WebElement dateValidFrom = driver.findElement(By.xpath(".//input[@name='date_valid_from']"));
-        dateValidFrom.sendKeys("2016-10-11");
-
-        WebElement dateValidTo = driver.findElement(By.xpath(".//input[@name='date_valid_to']"));
-        dateValidTo.sendKeys("2016-10-12");
-
-
-        WebElement informationTab = driver.findElement(By.xpath(".//ul[@class='index']//a[@href='#tab-information']"));
-        informationTab.click();
-
-        Select manufactured = new Select(driver.findElement(By.xpath(".//select[@name='manufacturer_id']")));
-        manufactured.selectByVisibleText("ACME Corp.");
-
-        WebElement keywords = driver.findElement(By.xpath(".//input[@name='keywords']"));
-        keywords.clear();
-        keywords.sendKeys("my product buy product");
-
-        WebElement shortDescription = driver.findElement(By.xpath(".//input[@name='short_description[en]']"));
-        shortDescription.clear();
-        shortDescription.sendKeys("shortDescription bla bla bla");
-
-        WebElement description = driver.findElement(By.xpath(".//div[@class='trumbowyg-editor']"));
-        description.clear();
-        description.sendKeys("description bla bla bla bla bla bla");
-
-        WebElement headTitle = driver.findElement(By.xpath(".//input[@name='head_title[en]']"));
-        headTitle.clear();
-        headTitle.sendKeys("Head Title of a Product");
-
-        WebElement metaDescription = driver.findElement(By.xpath(".//input[@name='meta_description[en]']"));
-        metaDescription.clear();
-        metaDescription.sendKeys("meta description bla bla bla bla");
-
-        WebElement priceTab = driver.findElement(By.xpath(".//ul[@class='index']//a[@href='#tab-prices']"));
-        priceTab.click();
-
-        WebElement purchasePrices = driver.findElement(By.xpath(".//input[@name='purchase_price']"));
-        purchasePrices.clear();
-        purchasePrices.sendKeys("20");
-
-        Select priceSelect = new Select(driver.findElement(By.xpath(".//select[@name='purchase_price_currency_code']")));
-        priceSelect.selectByIndex(2);
-
-        WebElement priceUSD = driver.findElement(By.xpath(".//input[@name='prices[USD]']"));
-        priceUSD.clear();
-        priceUSD.sendKeys("10");
-
-        WebElement grossUSD = driver.findElement(By.xpath(".//input[@name='gross_prices[USD]']"));
-        grossUSD.clear();
-        grossUSD.sendKeys("5");
-
-        WebElement priceEUR = driver.findElement(By.xpath(".//input[@name='prices[EUR]']"));
-        priceEUR.clear();
-        priceEUR.sendKeys("15");
-
-        WebElement grossEUR = driver.findElement(By.xpath(".//input[@name='gross_prices[EUR]']"));
-        grossEUR.clear();
-        grossEUR.sendKeys("12");
-
-        WebElement saveButton = driver.findElement(By.xpath(".//button[@name='save']"));
-        saveButton.click();
-
-        driver.navigate().to("http://localhost/litecart/public_html/admin/?app=catalog&doc=catalog");
-        WebElement menuCatalog = driver.findElement(By.xpath(".//li[@id='doc-catalog']/a"));
-        menuCatalog.click();
+        catalogMenuOpen();
+        clickToAddNewProduct();
+        fillGeneralTab();
+        fillInformationTab();
+        fillPriceTab();
+        saveButton();
+        navigateToCatalogMenu();
 
         List<WebElement> elements = driver.findElements(By.xpath(".//tr[@class='row']//td[3]/a"));
         for (int i = 3; i < elements.size(); i++) {

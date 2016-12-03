@@ -53,8 +53,8 @@
       <file leaf-file-name="TestsLitecartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+            <state relative-caret-position="1971">
+              <caret line="337" column="73" selection-start-line="337" selection-start-column="73" selection-end-line="337" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -673,34 +673,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 23m 30s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 24m 36s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 14h 55m 58s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 15h 27m 53s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 15h 33m 11s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 13h 55m 50s.xml">
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 16h 20m 21s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 14h 04m 57s.xml">
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 16h 35m 18s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 14h 55m 23s.xml">
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 16h 38m 23s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 15h 33m 33s.xml">
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 16h 42m 24s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 15h 34m 29s.xml">
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 16h 49m 50s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 16h 59m 30s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 17h 00m 49s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 17h 04m 15s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 17h 07m 18s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 17h 08m 07s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1130,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+        <state relative-caret-position="1971">
+          <caret line="337" column="73" selection-start-line="337" selection-start-column="73" selection-end-line="337" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

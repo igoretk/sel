@@ -41,8 +41,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+            <state relative-caret-position="111">
+              <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +53,8 @@
       <file leaf-file-name="TestsLitecartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="260" column="55" selection-start-line="260" selection-start-column="55" selection-end-line="260" selection-end-column="55" />
+            <state relative-caret-position="175">
+              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,10 +157,6 @@
               <option name="myItemId" value="firststeps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -243,7 +239,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="public" />
   </component>
-  <component name="RunManager" selected="TestNG.TestsLitecartApp.testTask11NewCustomerReg">
+  <component name="RunManager" selected="TestNG.TestsLitecartApp.testTask12NewProductAdd">
     <configuration default="false" name="TestsLitecartApp.testTask9Part1ZoneNumbers" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -652,8 +648,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask11NewCustomerReg" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask12NewProductAdd" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask12NewProductAdd" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask11NewCustomerReg" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part2" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part1ZoneNumbers2" />
@@ -677,18 +673,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 15m 59s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 16m 49s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 18m 15s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 21m 22s.xml">
-      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 13h 23m 30s.xml">
       <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
     </history-entry>
@@ -698,6 +682,12 @@
     <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 14h 55m 58s.xml">
       <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 15h 27m 53s.xml">
+      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask11NewCustomerReg - 2016.12.03 at 15h 33m 11s.xml">
+      <configuration name="TestsLitecartApp.testTask11NewCustomerReg" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 13h 55m 50s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
@@ -705,6 +695,12 @@
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 14h 55m 23s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 15h 33m 33s.xml">
+      <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask12NewProductAdd - 2016.12.03 at 15h 34m 29s.xml">
       <configuration name="TestsLitecartApp.testTask12NewProductAdd" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -720,7 +716,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35476956" sideWeight="0.5133262" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33315566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36655948" sideWeight="0.48667377" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35530546" sideWeight="0.48667377" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1124,8 +1120,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+        <state relative-caret-position="111">
+          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1134,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="260" column="55" selection-start-line="260" selection-start-column="55" selection-end-line="260" selection-end-column="55" />
+        <state relative-caret-position="175">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

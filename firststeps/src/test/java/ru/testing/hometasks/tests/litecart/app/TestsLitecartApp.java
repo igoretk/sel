@@ -260,6 +260,18 @@ public class TestsLitecartApp extends TestBase {
         Select deliveryStatus = new Select(driver.findElement(By.xpath(".//select[@name='delivery_status_id']")));
         deliveryStatus.selectByVisibleText("3-5 days");
 
+        Select soldOutStatus = new Select(driver.findElement(By.xpath(".//select[@name='sold_out_status_id']")));
+        soldOutStatus.selectByVisibleText("Sold out");
+
+        WebElement upload = driver.findElement(By.xpath(".//input[@type='file']"));
+        upload.sendKeys("e:\\sel\\firststeps\\Desert.jpg");
+
+        WebElement dateValidFrom = driver.findElement(By.xpath(".//input[@name='date_valid_from']"));
+        dateValidFrom.sendKeys("2016-10-11");
+
+        WebElement dateValidTo = driver.findElement(By.xpath(".//input[@name='date_valid_to']"));
+        dateValidTo.sendKeys("2016-10-12");
+
     }
 
 }

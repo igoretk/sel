@@ -225,6 +225,43 @@ public class TestsLitecartApp extends TestBase {
         userLogout();
     }
 
+    @Test
+    public void testTask12NewProductAdd() throws InterruptedException {
+        WebElement catalog = driver.findElement(By.xpath(".//*[@id='box-apps-menu']//li[2]/a"));
+        catalog.click();
+
+        WebElement addNewProduct = driver.findElement(By.xpath(".//*[@id='content']//a[2]"));
+        addNewProduct.click();
+
+        WebElement status = driver.findElement(By.xpath("//input[@name='status' and @value='1']"));
+        status.click();
+
+        WebElement name = driver.findElement(By.xpath(".//span[@class='input-wrapper']//*[@type='text']"));
+        name.clear();
+        name.sendKeys("MyProduct");
+
+        WebElement code = driver.findElement(By.xpath(".//input[@name='code']"));
+        code.clear();
+        code.sendKeys("123321");
+
+        WebElement category = driver.findElement(By.xpath(".//input[@data-name='Rubber Ducks']"));
+        category.click();
+
+        WebElement gender = driver.findElement(By.xpath(".//input[@type='checkbox' and @value='1-1']"));
+        gender.click();
+
+        WebElement quantity = driver.findElement(By.xpath(".//input[@name='quantity']"));
+        quantity.clear();
+        quantity.sendKeys("20");
+
+        Select quantityUnit = new Select(driver.findElement(By.xpath(".//select[@name='quantity_unit_id']")));
+        quantityUnit.selectByVisibleText("pcs");
+
+        Select deliveryStatus = new Select(driver.findElement(By.xpath(".//select[@name='delivery_status_id']")));
+        deliveryStatus.selectByVisibleText("3-5 days");
+
+    }
+
 }
 
 

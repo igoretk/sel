@@ -45,8 +45,8 @@ public class TestBase {
     } else if (Objects.equals(browser, BrowserType.IE)) {
       driver = new InternetExplorerDriver(capabilities);
     }
-    wait = new WebDriverWait(driver, 5);
-    driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+    wait = new WebDriverWait(driver, 15);
+   // driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
     login("admin", "admin");
 

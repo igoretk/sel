@@ -45,8 +45,8 @@
       <file leaf-file-name="TestsLitecartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+            <state relative-caret-position="906">
+              <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -607,21 +607,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 19h 44m 32s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 19h 46m 08s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 19h 51m 33s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 19h 55m 33s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 19h 56m 37s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 19h 59m 33s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
@@ -635,6 +620,21 @@
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 20h 33m 24s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 20h 44m 48s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 20h 46m 38s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 20h 50m 04s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 20h 51m 03s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 20h 51m 29s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -981,8 +981,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+        <state relative-caret-position="906">
+          <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
           <folding />
         </state>
       </provider>

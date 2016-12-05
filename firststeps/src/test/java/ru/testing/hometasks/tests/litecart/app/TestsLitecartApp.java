@@ -256,7 +256,7 @@ public class TestsLitecartApp extends TestBase {
     List<WebElement> ducks = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
     int n = rand.nextInt(ducks.size());
     ducks.get(n).click();
-    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))){
+    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
       Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
       select.selectByVisibleText("Small");
 
@@ -273,7 +273,7 @@ public class TestsLitecartApp extends TestBase {
     driver.navigate().to("http://localhost/litecart/public_html/en/");
     List<WebElement> ducks2 = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
     ducks2.get(n).click();
-    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))){
+    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
       Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
       select.selectByVisibleText("Small");
 
@@ -290,7 +290,7 @@ public class TestsLitecartApp extends TestBase {
     driver.navigate().to("http://localhost/litecart/public_html/en/");
     List<WebElement> ducks3 = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
     ducks3.get(n).click();
-    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))){
+    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
       Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
       select.selectByVisibleText("Small");
 
@@ -302,7 +302,17 @@ public class TestsLitecartApp extends TestBase {
     System.out.println("сч " + count3.getAttribute("innerText"));
     int i3 = Integer.parseInt(count3.getAttribute("innerText"));
     assertEquals(i3, countAttempt + i3);
-    Thread.sleep(1000);
+
+    driver.navigate().to("http://localhost/litecart/public_html/en/checkout");
+    for (int attempt = 1; attempt <= 20; attempt++) {
+      if (isElementPresent(driver, (By.xpath(".//*[@name='remove_cart_item']")))) {
+        WebElement element1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@name='remove_cart_item']")));
+        element1.click();
+
+      }
+
+    }
+
   }
 
 }

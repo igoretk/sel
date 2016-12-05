@@ -304,11 +304,24 @@ public class TestsLitecartApp extends TestBase {
     assertEquals(i3, countAttempt + i3);
 
     driver.navigate().to("http://localhost/litecart/public_html/en/checkout");
-    for (int attempt = 1; attempt <= 20; attempt++) {
-      if (isElementPresent(driver, (By.xpath(".//*[@name='remove_cart_item']")))) {
-        WebElement element1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@name='remove_cart_item']")));
-        element1.click();
 
+
+    List<WebElement> table = driver.findElements(By.xpath(".//*[@class='dataTable rounded-corners']//tr"));
+    System.out.println("разм табл " + table.size());
+
+    if (isElementPresent(driver, (By.xpath(".//*[@name='remove_cart_item']")))) {
+      WebElement element1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@name='remove_cart_item']")));
+
+    for (int j = table.size()-2; j > 1; j--) {
+      element1.click();
+      element1.click();
+      element1.click();
+
+      WebElement el = driver.findElement(By.xpath(String.format(".//*[@class='dataTable rounded-corners']//tr[%s]", j)));
+
+
+        System.out.println(j + " строка табл " + el.getText());
+        //assertTrue(el.getText().equals(null));
       }
 
     }

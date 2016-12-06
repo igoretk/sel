@@ -306,29 +306,21 @@ public class TestsLitecartApp extends TestBase {
     driver.navigate().to("http://localhost/litecart/public_html/en/checkout");
 
 
-    List<WebElement> table = driver.findElements(By.xpath(".//*[@class='dataTable rounded-corners']//tr"));
+    List<WebElement> table = driver.findElements(By.xpath("//*[@id='order_confirmation-wrapper']//td[@class='item']"));
     System.out.println("разм табл " + table.size());
 
-    if (isElementPresent(driver, (By.xpath(".//*[@name='remove_cart_item']")))) {
-      WebElement element1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@name='remove_cart_item']")));
-
-    for (int j = table.size()-2; j > 1; j--) {
-      element1.click();
-      element1.click();
-      element1.click();
-
-      WebElement el = driver.findElement(By.xpath(String.format(".//*[@class='dataTable rounded-corners']//tr[%s]", j)));
-
-
-        System.out.println(j + " строка табл " + el.getText());
-        //assertTrue(el.getText().equals(null));
-      }
-
+    for (int j = 0; j < table.size(); j++) {
+      List<WebElement> tableRow = driver.findElements(By.xpath("//*[@id='order_confirmation-wrapper']//td[@class='item']"));
+      WebElement removeButton = driver.findElement(By.xpath("//button[@name='remove_cart_item']"));
+      removeButton.click();
+      wait.until(ExpectedConditions.stalenessOf(tableRow.get(j)));
     }
 
   }
 
 }
+
+
 
 
 

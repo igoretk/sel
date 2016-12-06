@@ -49,8 +49,8 @@
       <file leaf-file-name="TestsLitecartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="314" column="27" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
+            <state relative-caret-position="243">
+              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -621,15 +621,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 35m 03s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 36m 40s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 38m 09s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 39m 36s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
@@ -646,6 +637,15 @@
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.06 at 14h 47m 27s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.06 at 15h 12m 10s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.06 at 15h 12m 57s.xml">
+      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.06 at 15h 14m 55s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd_(1) - 2016.12.05 at 21h 37m 44s.xml">
@@ -702,7 +702,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1011,8 +1011,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="314" column="27" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
+        <state relative-caret-position="243">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding />
         </state>
       </provider>

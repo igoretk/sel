@@ -250,70 +250,32 @@ public class TestsLitecartApp extends TestBase {
   public void testTask13CartAdd() throws InterruptedException {
 
     Random rand = new Random();
-    int countAttempt = 0;
 
     driver.navigate().to("http://localhost/litecart/public_html/en/");
-    List<WebElement> ducks = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
-    int n = rand.nextInt(ducks.size());
-    ducks.get(n).click();
-    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
-      Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
-      select.selectByVisibleText("Small");
 
+    for (int i = 0; i < 3; i++) {
+      List<WebElement> ducks = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
+      int n = rand.nextInt(ducks.size());
+      ducks.get(n).click();
+      if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
+        Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
+        select.selectByVisibleText("Small");
+      }
+      WebElement buttonAddToCart = driver.findElement(By.xpath(".//button[@name='add_cart_product']"));
+      WebElement count = driver.findElement(By.xpath(".//span[@class='quantity']"));
+      int countBeforeAdd = Integer.parseInt(count.getAttribute("innerText"));
+      buttonAddToCart.click();
+      wait.until(ExpectedConditions.attributeContains(count, "innerText", Integer.toString(countBeforeAdd + 1)));
     }
-    WebElement buttonAddToCart = driver.findElement(By.xpath(".//button[@name='add_cart_product']"));
-    WebElement count = driver.findElement(By.xpath(".//span[@class='quantity']"));
-    buttonAddToCart.click();
-    wait.until(ExpectedConditions.attributeContains(count, "innerText", "1"));
-    System.out.println("сч " + count.getAttribute("innerText"));
-    int i = Integer.parseInt(count.getAttribute("innerText"));
-    assertEquals(i, countAttempt + i);
-
-
-    driver.navigate().to("http://localhost/litecart/public_html/en/");
-    List<WebElement> ducks2 = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
-    ducks2.get(n).click();
-    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
-      Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
-      select.selectByVisibleText("Small");
-
-    }
-    WebElement buttonAddToCart2 = driver.findElement(By.xpath(".//button[@name='add_cart_product']"));
-    WebElement count2 = driver.findElement(By.xpath(".//span[@class='quantity']"));
-    buttonAddToCart2.click();
-    wait.until(ExpectedConditions.attributeContains(count2, "innerText", "2"));
-    System.out.println("сч " + count2.getAttribute("innerText"));
-    int i2 = Integer.parseInt(count2.getAttribute("innerText"));
-    assertEquals(i2, countAttempt + i2);
-
-
-    driver.navigate().to("http://localhost/litecart/public_html/en/");
-    List<WebElement> ducks3 = driver.findElements(By.xpath(".//*[@class='content']//ul[@class='listing-wrapper products']//li"));
-    ducks3.get(n).click();
-    if (isElementPresent(driver, (By.xpath(".//select[@name='options[Size]']")))) {
-      Select select = new Select(driver.findElement(By.xpath(".//select[@name='options[Size]']")));
-      select.selectByVisibleText("Small");
-
-    }
-    WebElement buttonAddToCart3 = driver.findElement(By.xpath(".//button[@name='add_cart_product']"));
-    WebElement count3 = driver.findElement(By.xpath(".//span[@class='quantity']"));
-    buttonAddToCart3.click();
-    wait.until(ExpectedConditions.attributeContains(count3, "innerText", "3"));
-    System.out.println("сч " + count3.getAttribute("innerText"));
-    int i3 = Integer.parseInt(count3.getAttribute("innerText"));
-    assertEquals(i3, countAttempt + i3);
 
     driver.navigate().to("http://localhost/litecart/public_html/en/checkout");
 
-
     List<WebElement> table = driver.findElements(By.xpath("//*[@id='order_confirmation-wrapper']//td[@class='item']"));
-    System.out.println("разм табл " + table.size());
-
     for (int j = 0; j < table.size(); j++) {
       List<WebElement> tableRow = driver.findElements(By.xpath("//*[@id='order_confirmation-wrapper']//td[@class='item']"));
       WebElement removeButton = driver.findElement(By.xpath("//button[@name='remove_cart_item']"));
       removeButton.click();
-      wait.until(ExpectedConditions.stalenessOf(tableRow.get(j)));
+      wait.until(ExpectedConditions.stalenessOf(tableRow.get(0)));
     }
 
   }

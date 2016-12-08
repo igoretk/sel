@@ -49,8 +49,8 @@
       <file leaf-file-name="TestsLitecartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="280" column="31" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -143,6 +143,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,11 +163,109 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstSteps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firststeps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hometasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstSteps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firststeps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hometasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstSteps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firststeps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hometasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="browser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstSteps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firststeps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,40 +277,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="public" />
   </component>
-  <component name="RunManager" selected="TestNG.TestsLitecartApp.testTask13CartAdd">
-    <configuration default="false" name="TestsLitecartApp.testTask9Part2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.testing.hometasks.tests.litecart.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="firststeps" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
-      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
-      <option name="METHOD_NAME" value="testTask9Part2" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestsLitecartApp.testTask14Windows">
     <configuration default="false" name="TestsLitecartApp.testTask11NewCustomerReg" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -324,6 +391,39 @@
       <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
       <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
       <option name="METHOD_NAME" value="testTask13CartAdd" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestsLitecartApp.testTask14Windows" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.testing.hometasks.tests.litecart.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="firststeps" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="ru.testing.hometasks.tests.litecart.app" />
+      <option name="MAIN_CLASS_NAME" value="ru.testing.hometasks.tests.litecart.app.TestsLitecartApp" />
+      <option name="METHOD_NAME" value="testTask14Windows" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -588,19 +688,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part2" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask11NewCustomerReg" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask12NewProductAdd" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd (1)" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask11NewCustomerReg" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask12NewProductAdd" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd (1)" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask14Windows" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask11NewCustomerReg" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask12NewProductAdd" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask9Part2" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask14Windows" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask11NewCustomerReg" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask13CartAdd (1)" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestsLitecartApp.testTask12NewProductAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -621,21 +721,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 39m 36s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 40m 44s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 43m 35s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 44m 23s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.05 at 21h 45m 20s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.06 at 14h 47m 27s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
@@ -650,6 +735,21 @@
     </history-entry>
     <history-entry file="TestsLitecartApp_testTask13CartAdd_(1) - 2016.12.05 at 21h 37m 44s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 19h 28m 59s.xml">
+      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 01m 48s.xml">
+      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 03m 02s.xml">
+      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 03m 52s.xml">
+      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 12m 15s.xml">
+      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1011,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="280" column="31" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="31" />
           <folding />
         </state>
       </provider>

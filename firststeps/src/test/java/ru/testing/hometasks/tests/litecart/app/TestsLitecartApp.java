@@ -3,15 +3,13 @@ package ru.testing.hometasks.tests.litecart.app;
 import com.thoughtworks.selenium.condition.Presence;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
@@ -276,6 +274,34 @@ public class TestsLitecartApp extends TestBase {
       WebElement removeButton = driver.findElement(By.xpath("//button[@name='remove_cart_item']"));
       removeButton.click();
       wait.until(ExpectedConditions.stalenessOf(tableRow.get(0)));
+    }
+
+  }
+  @Test
+  public void testTask14Windows() {
+
+    String pageForStartTest = "http://localhost/litecart/public_html/admin/?app=countries&doc=countries";
+    Random rand = new Random();
+
+    driver.navigate().to(pageForStartTest);
+
+    List<WebElement> allCountries = driver.findElements(By.xpath(".//table//tr//td[5]/a"));
+    int n = rand.nextInt(allCountries.size());
+    allCountries.get(n).click();
+
+    List<WebElement> allLinksForWinOpen = driver.findElements(By.xpath(".//*[@id='content']//a[@target='_blank']"));
+
+    int m = rand.nextInt(allLinksForWinOpen.size());
+    if (isElementPresent(driver, By.xpath(".//*[@id='content']//a[@target='_blank']"))) {
+      String originalWin = driver.getWindowHandle();
+      Set<String> oldWins = driver.getWindowHandles();
+      allLinksForWinOpen.get(m).click();
+      for (String winHandle : driver.getWindowHandles()) {
+        wait.until(ExpectedConditions.numberOfWindowsToBe(oldWins.size() + 1));
+        driver.switchTo().window(winHandle);
+      }
+      driver.close();
+      driver.switchTo().window(originalWin);
     }
 
   }

@@ -1,16 +1,15 @@
 package ru.testing.hometasks.tests.litecart.app;
 
-import com.thoughtworks.selenium.condition.Presence;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -306,6 +305,29 @@ public class TestsLitecartApp extends TestBase {
 
   }
 
+
+  @Test
+  public void testTask17LogsError() {
+
+    String pageForStartTest = "http://localhost/litecart/public_html/admin/?app=catalog&doc=catalog&category_id=1";
+    driver.navigate().to(pageForStartTest);
+
+    List<WebElement> linksToEdit = driver.findElements(By.xpath(".//*[@class='dataTable']//tr//td[3]//a"));
+    for (int i = 5; i <= linksToEdit.size() + 1; i++) {
+      WebElement items = driver.findElement(By.xpath(String.format(".//*[@class='dataTable']//tr[%s]//td[3]//a", i)));
+      items.click();
+      analyzeLog();
+      driver.navigate().back();
+    }
+
+  }
+
+  public void analyzeLog() {
+    LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+    for (LogEntry entry : logEntries) {
+      System.out.println(new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
+    }
+  }
 }
 
 

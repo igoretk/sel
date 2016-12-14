@@ -8,7 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,262 +20,270 @@ import org.testng.annotations.BeforeClass;
 
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 /**
  * Created by bebeka on 20.11.2016.
  */
 public class TestBase {
-  public WebDriver driver;
-  public WebDriverWait wait;
-  public String browser;
+    public WebDriver driver;
+    public WebDriverWait wait;
+    public String browser;
 
-  public TestBase(String browser) {
-    this.browser = browser;
-  }
-
-  @BeforeClass
-  public void setUp() {
-    browser = BrowserType.CHROME;
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("start-maximized");
-    DesiredCapabilities capabilities = new DesiredCapabilities();
-    capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
-
-    if (Objects.equals(browser, BrowserType.FIREFOX)) {
-      driver = new FirefoxDriver();
-    } else if (Objects.equals(browser, BrowserType.CHROME)) {
-      driver = new ChromeDriver(options);
-    } else if (Objects.equals(browser, BrowserType.IE)) {
-      driver = new InternetExplorerDriver(capabilities);
+    public TestBase(String browser) {
+        this.browser = browser;
     }
-    wait = new WebDriverWait(driver, 15);
-   // driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
-    login("admin", "admin");
+    @BeforeClass
+    public void setUp() {
+        browser = BrowserType.CHROME;
 
-  }
+        //ChromeOptions options = new ChromeOptions();
+        //options.addArguments("start-maximized");
+        DesiredCapabilities capabilities = new DesiredCapabilities();
 
-  public void login(String username, String password) {
-    driver.get("http://localhost/litecart/public_html/admin");
-    driver.findElement(By.name("username")).sendKeys(username);
-    driver.findElement(By.name("password")).sendKeys(password);
-    driver.findElement(By.name("login")).click();
-  }
+        DesiredCapabilities caps = DesiredCapabilities.chrome();
+        LoggingPreferences logPrefs = new LoggingPreferences();
+        logPrefs.enable(LogType.BROWSER, Level.ALL);
+        caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
 
-  @AfterClass
-  public void tearDown() {
-    driver.quit();
-    driver = null;
+        capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
 
-  }
+        if (Objects.equals(browser, BrowserType.FIREFOX)) {
+            driver = new FirefoxDriver();
+        } else if (Objects.equals(browser, BrowserType.CHROME)) {
+            driver = new ChromeDriver(caps);
+        } else if (Objects.equals(browser, BrowserType.IE)) {
+            driver = new InternetExplorerDriver(capabilities);
+        }
+        wait = new WebDriverWait(driver, 15);
+        // driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
-  boolean isElementPresent(WebDriver driver, By locator) {
-    try {
-      driver.findElement(locator);
-      return true;
-    } catch (NoSuchElementException ex) {
-      return false;
+        login("admin", "admin");
+
     }
-  }
 
-  public void userLogout() {
-      WebElement logOut = driver.findElement(By.xpath(".//*[@id='box-account']//li[4]/a"));
-      logOut.click();
-  }
+    public void login(String username, String password) {
+        driver.get("http://localhost/litecart/public_html/admin");
+        driver.findElement(By.name("username")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
+        driver.findElement(By.name("login")).click();
+    }
 
-  public String createAcc() {
-      driver.navigate().to("http://localhost/litecart/public_html/en/");
-      driver.findElement(By.xpath(".//*[@id='box-account-login']//tr[5]/td/a")).click();
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+        driver = null;
 
-      WebElement taxId = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[1]//td[1]/input"));
-      taxId.clear();
-      taxId.sendKeys("111222333");
+    }
 
-      WebElement company = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[1]//td[2]/input"));
-      company.clear();
-      company.sendKeys("test_Company");
+    boolean isElementPresent(WebDriver driver, By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException ex) {
+            return false;
+        }
+    }
 
-      WebElement firstName = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[2]//td[1]/input"));
-      firstName.clear();
-      firstName.sendKeys("Vasisualiy");
+    public void userLogout() {
+        WebElement logOut = driver.findElement(By.xpath(".//*[@id='box-account']//li[4]/a"));
+        logOut.click();
+    }
 
-      WebElement lastName = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[2]//td[2]/input"));
-      lastName.clear();
-      lastName.sendKeys("Lohankin");
+    public String createAcc() {
+        driver.navigate().to("http://localhost/litecart/public_html/en/");
+        driver.findElement(By.xpath(".//*[@id='box-account-login']//tr[5]/td/a")).click();
 
-      WebElement adr1 = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[3]//td[1]/input"));
-      adr1.clear();
-      adr1.sendKeys("test_Address 1");
+        WebElement taxId = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[1]//td[1]/input"));
+        taxId.clear();
+        taxId.sendKeys("111222333");
 
-      WebElement adr2 = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[3]//td[2]/input"));
-      adr2.clear();
-      adr2.sendKeys("test_Address 2");
+        WebElement company = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[1]//td[2]/input"));
+        company.clear();
+        company.sendKeys("test_Company");
 
-      WebElement postCode = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[4]//td[1]/input"));
-      postCode.clear();
-      postCode.sendKeys("61174");
+        WebElement firstName = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[2]//td[1]/input"));
+        firstName.clear();
+        firstName.sendKeys("Vasisualiy");
 
-      WebElement city = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[4]//td[2]/input"));
-      city.clear();
-      city.sendKeys("61174");
+        WebElement lastName = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[2]//td[2]/input"));
+        lastName.clear();
+        lastName.sendKeys("Lohankin");
 
-      WebElement countryToSelect = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[5]//td[1]/select"));
-      Select selectCountry = new Select(countryToSelect);
-      selectCountry.selectByVisibleText("United States");
+        WebElement adr1 = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[3]//td[1]/input"));
+        adr1.clear();
+        adr1.sendKeys("test_Address 1");
 
-      Select selectState = new Select(driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[5]//td[2]/select")));
-      selectState.selectByVisibleText("Alabama");
+        WebElement adr2 = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[3]//td[2]/input"));
+        adr2.clear();
+        adr2.sendKeys("test_Address 2");
 
-      WebElement email = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[6]//td[1]/input"));
-      email.clear();
-      String emailData = "e" + java.util.UUID.randomUUID().toString().substring(0, 7) + "@mail.com";
-      email.sendKeys(emailData);
+        WebElement postCode = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[4]//td[1]/input"));
+        postCode.clear();
+        postCode.sendKeys("61174");
 
-      WebElement phone = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[6]//td[2]/input"));
-      phone.clear();
-      phone.sendKeys("+38050654321");
+        WebElement city = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[4]//td[2]/input"));
+        city.clear();
+        city.sendKeys("61174");
 
-      WebElement desiredPsw = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[8]//td[1]/input"));
-      desiredPsw.clear();
-      desiredPsw.sendKeys("passwordQwe123");
+        WebElement countryToSelect = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[5]//td[1]/select"));
+        Select selectCountry = new Select(countryToSelect);
+        selectCountry.selectByVisibleText("United States");
 
-      WebElement confirmPsw = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[8]//td[2]/input"));
-      confirmPsw.clear();
-      confirmPsw.sendKeys("passwordQwe123");
+        Select selectState = new Select(driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[5]//td[2]/select")));
+        selectState.selectByVisibleText("Alabama");
 
-      WebElement buttonCreateAcc = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[9]//td[1]/button"));
-      buttonCreateAcc.click();
-      return emailData;
-  }
+        WebElement email = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[6]//td[1]/input"));
+        email.clear();
+        String emailData = "e" + java.util.UUID.randomUUID().toString().substring(0, 7) + "@mail.com";
+        email.sendKeys(emailData);
 
-  public void newUserLogin(String emailData) {
-      WebElement emailAdr = driver.findElement(By.xpath(".//*[@name ='email']"));
-      emailAdr.clear();
-      emailAdr.sendKeys(emailData);
+        WebElement phone = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[6]//td[2]/input"));
+        phone.clear();
+        phone.sendKeys("+38050654321");
 
-      WebElement password = driver.findElement(By.xpath(".//*[@name ='password']"));
-      password.clear();
-      password.sendKeys("passwordQwe123");
+        WebElement desiredPsw = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[8]//td[1]/input"));
+        desiredPsw.clear();
+        desiredPsw.sendKeys("passwordQwe123");
 
-      WebElement btnLogin = driver.findElement(By.xpath(".//*[@name='login']"));
-      btnLogin.click();
-  }
+        WebElement confirmPsw = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[8]//td[2]/input"));
+        confirmPsw.clear();
+        confirmPsw.sendKeys("passwordQwe123");
 
-  public void clickToAddNewProduct() {
-      WebElement addNewProduct = driver.findElement(By.xpath(".//*[@id='content']//a[2]"));
-      addNewProduct.click();
-  }
+        WebElement buttonCreateAcc = driver.findElement(By.xpath(".//*[@id='create-account']//table//tr[9]//td[1]/button"));
+        buttonCreateAcc.click();
+        return emailData;
+    }
 
-  public void catalogMenuOpen() {
-      WebElement catalog = driver.findElement(By.xpath(".//*[@id='box-apps-menu']//li[2]/a"));
-      catalog.click();
-  }
+    public void newUserLogin(String emailData) {
+        WebElement emailAdr = driver.findElement(By.xpath(".//*[@name ='email']"));
+        emailAdr.clear();
+        emailAdr.sendKeys(emailData);
 
-  public void navigateToCatalogMenu() {
-      driver.navigate().to("http://localhost/litecart/public_html/admin/?app=catalog&doc=catalog");
-      WebElement menuCatalog = driver.findElement(By.xpath(".//li[@id='doc-catalog']/a"));
-      menuCatalog.click();
-  }
+        WebElement password = driver.findElement(By.xpath(".//*[@name ='password']"));
+        password.clear();
+        password.sendKeys("passwordQwe123");
 
-  public void saveButton() {
-      WebElement saveButton = driver.findElement(By.xpath(".//button[@name='save']"));
-      saveButton.click();
-  }
+        WebElement btnLogin = driver.findElement(By.xpath(".//*[@name='login']"));
+        btnLogin.click();
+    }
 
-  public void fillPriceTab() {
-      WebElement priceTab = driver.findElement(By.xpath(".//ul[@class='index']//a[@href='#tab-prices']"));
-      priceTab.click();
+    public void clickToAddNewProduct() {
+        WebElement addNewProduct = driver.findElement(By.xpath(".//*[@id='content']//a[2]"));
+        addNewProduct.click();
+    }
 
-      WebElement purchasePrices = driver.findElement(By.xpath(".//input[@name='purchase_price']"));
-      purchasePrices.clear();
-      purchasePrices.sendKeys("20");
+    public void catalogMenuOpen() {
+        WebElement catalog = driver.findElement(By.xpath(".//*[@id='box-apps-menu']//li[2]/a"));
+        catalog.click();
+    }
 
-      Select priceSelect = new Select(driver.findElement(By.xpath(".//select[@name='purchase_price_currency_code']")));
-      priceSelect.selectByIndex(2);
+    public void navigateToCatalogMenu() {
+        driver.navigate().to("http://localhost/litecart/public_html/admin/?app=catalog&doc=catalog");
+        WebElement menuCatalog = driver.findElement(By.xpath(".//li[@id='doc-catalog']/a"));
+        menuCatalog.click();
+    }
 
-      WebElement priceUSD = driver.findElement(By.xpath(".//input[@name='prices[USD]']"));
-      priceUSD.clear();
-      priceUSD.sendKeys("10");
+    public void saveButton() {
+        WebElement saveButton = driver.findElement(By.xpath(".//button[@name='save']"));
+        saveButton.click();
+    }
 
-      WebElement grossUSD = driver.findElement(By.xpath(".//input[@name='gross_prices[USD]']"));
-      grossUSD.clear();
-      grossUSD.sendKeys("5");
+    public void fillPriceTab() {
+        WebElement priceTab = driver.findElement(By.xpath(".//ul[@class='index']//a[@href='#tab-prices']"));
+        priceTab.click();
 
-      WebElement priceEUR = driver.findElement(By.xpath(".//input[@name='prices[EUR]']"));
-      priceEUR.clear();
-      priceEUR.sendKeys("15");
+        WebElement purchasePrices = driver.findElement(By.xpath(".//input[@name='purchase_price']"));
+        purchasePrices.clear();
+        purchasePrices.sendKeys("20");
 
-      WebElement grossEUR = driver.findElement(By.xpath(".//input[@name='gross_prices[EUR]']"));
-      grossEUR.clear();
-      grossEUR.sendKeys("12");
-  }
+        Select priceSelect = new Select(driver.findElement(By.xpath(".//select[@name='purchase_price_currency_code']")));
+        priceSelect.selectByIndex(2);
 
-  public void fillInformationTab() {
-      WebElement informationTab = driver.findElement(By.xpath(".//ul[@class='index']//a[@href='#tab-information']"));
-      informationTab.click();
+        WebElement priceUSD = driver.findElement(By.xpath(".//input[@name='prices[USD]']"));
+        priceUSD.clear();
+        priceUSD.sendKeys("10");
 
-      Select manufactured = new Select(driver.findElement(By.xpath(".//select[@name='manufacturer_id']")));
-      manufactured.selectByVisibleText("ACME Corp.");
+        WebElement grossUSD = driver.findElement(By.xpath(".//input[@name='gross_prices[USD]']"));
+        grossUSD.clear();
+        grossUSD.sendKeys("5");
 
-      WebElement keywords = driver.findElement(By.xpath(".//input[@name='keywords']"));
-      keywords.clear();
-      keywords.sendKeys("my product buy product");
+        WebElement priceEUR = driver.findElement(By.xpath(".//input[@name='prices[EUR]']"));
+        priceEUR.clear();
+        priceEUR.sendKeys("15");
 
-      WebElement shortDescription = driver.findElement(By.xpath(".//input[@name='short_description[en]']"));
-      shortDescription.clear();
-      shortDescription.sendKeys("shortDescription bla bla bla");
+        WebElement grossEUR = driver.findElement(By.xpath(".//input[@name='gross_prices[EUR]']"));
+        grossEUR.clear();
+        grossEUR.sendKeys("12");
+    }
 
-      WebElement description = driver.findElement(By.xpath(".//div[@class='trumbowyg-editor']"));
-      description.clear();
-      description.sendKeys("description bla bla bla bla bla bla");
+    public void fillInformationTab() {
+        WebElement informationTab = driver.findElement(By.xpath(".//ul[@class='index']//a[@href='#tab-information']"));
+        informationTab.click();
 
-      WebElement headTitle = driver.findElement(By.xpath(".//input[@name='head_title[en]']"));
-      headTitle.clear();
-      headTitle.sendKeys("Head Title of a Product");
+        Select manufactured = new Select(driver.findElement(By.xpath(".//select[@name='manufacturer_id']")));
+        manufactured.selectByVisibleText("ACME Corp.");
 
-      WebElement metaDescription = driver.findElement(By.xpath(".//input[@name='meta_description[en]']"));
-      metaDescription.clear();
-      metaDescription.sendKeys("meta description bla bla bla bla");
-  }
+        WebElement keywords = driver.findElement(By.xpath(".//input[@name='keywords']"));
+        keywords.clear();
+        keywords.sendKeys("my product buy product");
 
-  public void fillGeneralTab() {
-      WebElement status = driver.findElement(By.xpath("//input[@name='status' and @value='1']"));
-      status.click();
+        WebElement shortDescription = driver.findElement(By.xpath(".//input[@name='short_description[en]']"));
+        shortDescription.clear();
+        shortDescription.sendKeys("shortDescription bla bla bla");
 
-      WebElement name = driver.findElement(By.xpath(".//span[@class='input-wrapper']//*[@type='text']"));
-      name.clear();
-      name.sendKeys("MyProduct");
+        WebElement description = driver.findElement(By.xpath(".//div[@class='trumbowyg-editor']"));
+        description.clear();
+        description.sendKeys("description bla bla bla bla bla bla");
 
-      WebElement code = driver.findElement(By.xpath(".//input[@name='code']"));
-      code.clear();
-      code.sendKeys("123321");
+        WebElement headTitle = driver.findElement(By.xpath(".//input[@name='head_title[en]']"));
+        headTitle.clear();
+        headTitle.sendKeys("Head Title of a Product");
 
-      WebElement category = driver.findElement(By.xpath(".//input[@data-name='Rubber Ducks']"));
-      category.click();
+        WebElement metaDescription = driver.findElement(By.xpath(".//input[@name='meta_description[en]']"));
+        metaDescription.clear();
+        metaDescription.sendKeys("meta description bla bla bla bla");
+    }
 
-      WebElement gender = driver.findElement(By.xpath(".//input[@type='checkbox' and @value='1-1']"));
-      gender.click();
+    public void fillGeneralTab() {
+        WebElement status = driver.findElement(By.xpath("//input[@name='status' and @value='1']"));
+        status.click();
 
-      WebElement quantity = driver.findElement(By.xpath(".//input[@name='quantity']"));
-      quantity.clear();
-      quantity.sendKeys("20");
+        WebElement name = driver.findElement(By.xpath(".//span[@class='input-wrapper']//*[@type='text']"));
+        name.clear();
+        name.sendKeys("MyProduct");
 
-      Select quantityUnit = new Select(driver.findElement(By.xpath(".//select[@name='quantity_unit_id']")));
-      quantityUnit.selectByVisibleText("pcs");
+        WebElement code = driver.findElement(By.xpath(".//input[@name='code']"));
+        code.clear();
+        code.sendKeys("123321");
 
-      Select deliveryStatus = new Select(driver.findElement(By.xpath(".//select[@name='delivery_status_id']")));
-      deliveryStatus.selectByVisibleText("3-5 days");
+        WebElement category = driver.findElement(By.xpath(".//input[@data-name='Rubber Ducks']"));
+        category.click();
 
-      Select soldOutStatus = new Select(driver.findElement(By.xpath(".//select[@name='sold_out_status_id']")));
-      soldOutStatus.selectByVisibleText("Sold out");
+        WebElement gender = driver.findElement(By.xpath(".//input[@type='checkbox' and @value='1-1']"));
+        gender.click();
 
-      WebElement upload = driver.findElement(By.xpath(".//input[@type='file']"));
-      upload.sendKeys("e:\\sel\\firststeps\\Desert.jpg");
+        WebElement quantity = driver.findElement(By.xpath(".//input[@name='quantity']"));
+        quantity.clear();
+        quantity.sendKeys("20");
 
-      WebElement dateValidFrom = driver.findElement(By.xpath(".//input[@name='date_valid_from']"));
-      dateValidFrom.sendKeys("2016-10-11");
+        Select quantityUnit = new Select(driver.findElement(By.xpath(".//select[@name='quantity_unit_id']")));
+        quantityUnit.selectByVisibleText("pcs");
 
-      WebElement dateValidTo = driver.findElement(By.xpath(".//input[@name='date_valid_to']"));
-      dateValidTo.sendKeys("2016-10-12");
-  }
+        Select deliveryStatus = new Select(driver.findElement(By.xpath(".//select[@name='delivery_status_id']")));
+        deliveryStatus.selectByVisibleText("3-5 days");
+
+        Select soldOutStatus = new Select(driver.findElement(By.xpath(".//select[@name='sold_out_status_id']")));
+        soldOutStatus.selectByVisibleText("Sold out");
+
+        WebElement upload = driver.findElement(By.xpath(".//input[@type='file']"));
+        upload.sendKeys("e:\\sel\\firststeps\\Desert.jpg");
+
+        WebElement dateValidFrom = driver.findElement(By.xpath(".//input[@name='date_valid_from']"));
+        dateValidFrom.sendKeys("2016-10-11");
+
+        WebElement dateValidTo = driver.findElement(By.xpath(".//input[@name='date_valid_to']"));
+        dateValidTo.sendKeys("2016-10-12");
+    }
 }

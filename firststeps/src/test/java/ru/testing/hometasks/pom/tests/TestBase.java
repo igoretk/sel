@@ -4,20 +4,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import ru.testing.hometasks.pom.app.ApplicationManager;
 
-/**
- * Created by bebeka on 20.11.2016.
- */
-
 public class TestBase {
 
-  protected final ApplicationManager app;
+  public  ApplicationManager app = new ApplicationManager();
 
-  public TestBase(String browser) {
-    app = new ApplicationManager(browser);
-  }
+
 
   @BeforeClass
-  public void setUp() {
+  public void setUp(){
     app.init();
 
   }
@@ -28,7 +22,4 @@ public class TestBase {
 
   }
 
-  public ApplicationManager getApp() {
-    return app;
-  }
 }

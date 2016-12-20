@@ -22,16 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestsPOM.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestsPOM.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestsPOM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,30 +35,67 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#2657#2658#0" expanded="true" />
-                <element signature="e#2740#2741#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/RemoveHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/OpenHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/AddHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-29">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,9 +151,12 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/TestsPOM.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestsPOM.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/OpenHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/AddHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/RemoveHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/ApplicationManager.java" />
       </list>
     </option>
   </component>
@@ -318,6 +354,7 @@
       <recent name="ru.testing.hometasks.ru.pack.for19" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.testing.hometasks.pom.app" />
       <recent name="ru.testing.hometasks.pom" />
       <recent name="ru.testing.hometasks.ru.pack.for19.app" />
     </key>
@@ -766,40 +803,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectExampleTests_testTask13CartAdd - 2016.12.20 at 17h 48m 50s.xml">
-      <configuration name="PageObjectExampleTests.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectExample_testTask13CartAdd - 2016.12.20 at 16h 58m 28s.xml">
-      <configuration name="PageObjectExample.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectExample_testTask13CartAdd - 2016.12.20 at 16h 59m 56s.xml">
-      <configuration name="PageObjectExample.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectExample_testTask13CartAdd - 2016.12.20 at 17h 37m 07s.xml">
-      <configuration name="PageObjectExample.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.20 at 16h 35m 57s.xml">
-      <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 03m 52s.xml">
-      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 12m 15s.xml">
-      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsLitecartApp_testTask17LogsError - 2016.12.20 at 15h 16m 57s.xml">
-      <configuration name="TestsLitecartApp.testTask17LogsError" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 18h 32m 42s.xml">
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 41m 43s.xml">
       <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 18h 40m 10s.xml">
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 43m 46s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 44m 18s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 46m 07s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 47m 38s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 48m 43s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 49m 48s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 55m 56s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 58m 29s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 19h 58m 30s.xml">
       <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -813,7 +850,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15778251" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15778251" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -847,7 +884,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -856,30 +893,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestsLitecartApp.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/tests/litecart/app/TestBase.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1121,42 +1134,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/ApplicationManager.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/OpenHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/RemoveHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-            <element signature="e#2740#2741#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/tests/TestsPOM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/AddHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/app/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
           </folding>
         </state>
       </provider>

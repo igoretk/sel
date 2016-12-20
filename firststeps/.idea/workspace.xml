@@ -38,13 +38,14 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="124">
+              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
               <folding>
-                <element signature="e#1180#1181#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#3123#3124#0" expanded="true" />
-                <element signature="e#3206#3207#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#2929#2930#0" expanded="true" />
+                <element signature="e#3012#3013#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -720,9 +721,6 @@
     <history-entry file="TestsLitecartApp_testTask13CartAdd - 2016.12.20 at 16h 35m 57s.xml">
       <configuration name="TestsLitecartApp.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 03m 02s.xml">
-      <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestsLitecartApp_testTask14Windows - 2016.12.08 at 20h 03m 52s.xml">
       <configuration name="TestsLitecartApp.testTask14Windows" configurationId="TestNG" />
     </history-entry>
@@ -733,6 +731,9 @@
       <configuration name="TestsLitecartApp.testTask17LogsError" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 18h 32m 42s.xml">
+      <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestsPOM_testTask13CartAdd - 2016.12.20 at 18h 40m 10s.xml">
       <configuration name="TestsPOM.testTask13CartAdd" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1081,13 +1082,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/testing/hometasks/pom/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="124">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
           <folding>
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#3123#3124#0" expanded="true" />
-            <element signature="e#3206#3207#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#2929#2930#0" expanded="true" />
+            <element signature="e#3012#3013#0" expanded="true" />
           </folding>
         </state>
       </provider>

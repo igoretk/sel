@@ -8,10 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -22,12 +19,13 @@ import org.testng.annotations.BeforeClass;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
-import java.util.logging.Level;
 
 /**
  * Created by bebeka on 20.11.2016.
  */
+
 public class TestBase {
+
   public WebDriver driver;
   public WebDriverWait wait;
   public String browser;
@@ -38,10 +36,12 @@ public class TestBase {
 
   @BeforeClass
   public void setUp() {
-    browser = BrowserType.CHROME;
+    init();
 
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("start-maximized");
+  }
+
+  public void init() {
+    browser = BrowserType.CHROME;
     DesiredCapabilities capabilities = new DesiredCapabilities();
     DesiredCapabilities caps = DesiredCapabilities.chrome();
 
@@ -56,7 +56,6 @@ public class TestBase {
     }
     wait = new WebDriverWait(driver, 15);
     login("admin", "admin");
-
   }
 
   public void login(String username, String password) {
@@ -68,9 +67,13 @@ public class TestBase {
 
   @AfterClass
   public void tearDown() {
+    stop();
+
+  }
+
+  public void stop() {
     driver.quit();
     driver = null;
-
   }
 
   boolean isElementPresent(WebDriver driver, By locator) {

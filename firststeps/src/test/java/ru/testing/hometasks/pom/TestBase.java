@@ -1,42 +1,88 @@
-package ru.testing.hometasks.ru.pack.for19.app;
+package ru.testing.hometasks.pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
+import java.util.logging.Level;
 
-public class Application {
+/**
+ * Created by bebeka on 20.11.2016.
+ */
+public class TestBase {
   public WebDriver driver;
   public WebDriverWait wait;
   public String browser;
 
-  public Application(String browser) {
+  public TestBase(String browser) {
     this.browser = browser;
   }
 
+  @BeforeClass
+  public void setUp() {
+    browser = BrowserType.CHROME;
+
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("start-maximized");
+    DesiredCapabilities capabilities = new DesiredCapabilities();
+    DesiredCapabilities caps = DesiredCapabilities.chrome();
+
+    capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
+
+    if (Objects.equals(browser, BrowserType.FIREFOX)) {
+      driver = new FirefoxDriver();
+    } else if (Objects.equals(browser, BrowserType.CHROME)) {
+      driver = new ChromeDriver(caps);
+    } else if (Objects.equals(browser, BrowserType.IE)) {
+      driver = new InternetExplorerDriver(capabilities);
+    }
+    wait = new WebDriverWait(driver, 15);
+    login("admin", "admin");
+
+  }
+
   public void login(String username, String password) {
-      driver.get("http://localhost/litecart/public_html/admin");
-      driver.findElement(By.name("username")).sendKeys(username);
-      driver.findElement(By.name("password")).sendKeys(password);
-      driver.findElement(By.name("login")).click();
+    driver.get("http://localhost/litecart/public_html/admin");
+    driver.findElement(By.name("username")).sendKeys(username);
+    driver.findElement(By.name("password")).sendKeys(password);
+    driver.findElement(By.name("login")).click();
+  }
+
+  @AfterClass
+  public void tearDown() {
+    driver.quit();
+    driver = null;
+
   }
 
   boolean isElementPresent(WebDriver driver, By locator) {
-      try {
-          driver.findElement(locator);
-          return true;
-      } catch (NoSuchElementException ex) {
-          return false;
-      }
+    try {
+      driver.findElement(locator);
+      return true;
+    } catch (NoSuchElementException ex) {
+      return false;
+    }
   }
 
-  public void deleteItems() {
+  public void removeFromCart() {
     List<WebElement> table = driver.findElements(By.xpath("//*[@id='order_confirmation-wrapper']//td[@class='item']"));
     for (int j = 0; j < table.size(); j++) {
       List<WebElement> tableRow = driver.findElements(By.xpath("//*[@id='order_confirmation-wrapper']//td[@class='item']"));
